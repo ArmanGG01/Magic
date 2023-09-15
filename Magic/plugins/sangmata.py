@@ -19,7 +19,7 @@ async def sang(client: Client, message: Message):
         try:
             user = await client.get_users(client)
         except Exception as error:
-            return await client.callback(error)
+            return await client.sang(error)
     bot = ["@Sangmata_bot", "@SangMata_beta_bot"]
     getbot = random.choice(bot)
     try:
