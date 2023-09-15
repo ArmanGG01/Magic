@@ -19,7 +19,7 @@ async def sang(client: Client, message: Message):
         try:
             user = await client.get_users(client)
         except Exception as error:
-            return await lol.edit(error)
+            return await client.edit(error)
     bot = ["@Sangmata_bot", "@SangMata_beta_bot"]
     getbot = random.choice(bot)
     try:
@@ -29,7 +29,7 @@ async def sang(client: Client, message: Message):
         txt = await client.send_message(getbot, f"{user.id}")
     await txt.delete()
     await asyncio.sleep(5)
-    await lol.delete()
+    await client.delete()
     async for stalk in client.search_messages(getbot, query="History", limit=2):
         if not stalk:
             NotFound = await client.send_message(client.me.id, "Tidak ada komentar")
