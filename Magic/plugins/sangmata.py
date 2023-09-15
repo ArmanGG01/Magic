@@ -7,7 +7,7 @@ from pyrogram.types import *
 
 from Magic import *
 
-from Magic.utils import eor, extract_user
+#from Magic.utils import eor, extract_user
 
 
 @ubot.on_message(filters.command(["sa"], ".") & filters.me)
