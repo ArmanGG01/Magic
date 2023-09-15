@@ -1,24 +1,36 @@
 {
-    "name": "Ubot intinya",
-    "keywords": ["telegram", "userbot", "pyrogram"],
-    "repository": "https://github.com/Team-Pesulap/MagicProject",
-    "stack": "container",
-    "env": {
-        "API_ID": {
-            "description": "api id tau kan?",
-            "required": true
-    "buildpacks": [
-        {
-          "url": "heroku/python"
-        },
-        {
-          "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        }
-    ],
-    "formation": {
-        "worker": {
-          "quantity": 1,
-          "size": "basic"
-        }
-      }
-  }
+  "name": "MagicProject",
+  "description": "[MagicProject] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.  Powered by Team Pesulap.",
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": {
+      "description": "Dapatkan API ID di web my.telegram.org Masukan yg APP ID Telegram",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Dapatkan API Hash di web my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Buatlah Sebuah Bot Di BotFather Lalu Salin Token Bot Nya",
+      "required": true
+    },
+    "SESSION": {
+      "description": "Isi Dengan String Pyrogram V2",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Masukan Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": false
+    }
+  },
+      "buildpacks": [
+        {"url": "https://github.com/interconnectit/heroku-buildpack-ffmpeg"},
+        {"url": "https://github.com/subinps/heroku-buildpack-nodejs"},
+        {"url": "heroku/python"}
+    ]
+}
