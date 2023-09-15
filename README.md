@@ -32,7 +32,7 @@ Please use with your own risk and use it wisely.
 
 ## Heroku Deploy!
 <h3 align="center">Click The Button</h3>
-<a href="https://heroku.com/deploy?template=https://github.com/Team-Pesulap/MagicProject"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+<a href="https://heroku.com/deploy?template=https://github.com/ArmanGG01/Magic"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
 ## Info & Support 
