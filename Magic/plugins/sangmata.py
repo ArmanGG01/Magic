@@ -4,6 +4,7 @@ from pyrogram import *
 from pyrogram.errors import *
 from pyrogram.raw.functions.messages import *
 from pyrogram.types import *
+from pyrogra.dispatcher import *
 
 from Magic import *
 
