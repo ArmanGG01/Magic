@@ -15,13 +15,13 @@ from Magic import *
 async def sang(client: Client, message: Message):
    # kimak = await extract_user(message)
     lonte = await message.reply("Sedang Memproses...")
-    if args:
+    if client:
         try:
-            user = await client.get_users(args)
+            user = await client.get_users(client)
         except Exception as error:
             return await lol.edit(error)
     bot = ["@Sangmata_bot", "@SangMata_beta_bot"]
-    gettod = random.choice(bot)
+    getbot = random.choice(bot)
     try:
         txt = await client.send_message(getbot, f"{user.id}")
     except YouBlockedUser:
