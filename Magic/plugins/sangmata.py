@@ -12,7 +12,7 @@ from Magic import *
 
 @ubot.on_message(filters.command(["sa"], ".") & filters.me)
 async def sang(client: Client, message: Message):
-    kimak = await extract_user(message)
+   # kimak = await extract_user(message)
     lonte = await message.reply("Sedang Memproses...")
     if args:
         try:
